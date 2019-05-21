@@ -1,8 +1,3 @@
-
-
-
-Hello World!
-
 Build - "sudo docker build -t test ."
  
 Run - "docker run -d --name test_container -t -p 8000:8000 test"
