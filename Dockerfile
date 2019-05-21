@@ -11,20 +11,15 @@ ADD README.md /
 RUN apt-get update
 RUN apt update
 
+#installs python3 with yes flag
 RUN apt install -y python3
-#RUN python3 -m http.server
 
-
-#enables process to be accessed through the networkd
+#exposes port 8000
 EXPOSE 8000
-#CMD ["--port 8000"]
+
+#runs python webserver
 CMD python3 -m http.server
 
-#sets entry point 
-#ENTRYPOINT usr/bin/test
-
-#runs command to print README file on build
-#RUN cat README.md
 
 
 
